@@ -1184,7 +1184,7 @@ class HTTPClient:
             "invitable": invitable,
         }
         if content:
-            payload["message"] = content
+            payload["message"] = '{"content": "{content}"}'
 
         if applied_tags:
             payload["applied_tags"] = applied_tags
