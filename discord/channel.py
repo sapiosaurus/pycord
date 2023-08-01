@@ -1290,7 +1290,7 @@ class ForumChannel(_TextChannel):
         try:
             data = await state.http.start_forum_thread(
                 self.id,
-                content=message_content,
+                message=message_content,
                 name=name,
                 files=files,
                 embed=embed,
